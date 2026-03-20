@@ -10,40 +10,38 @@ const links = [
 	{ href: "/profile", label: "Profile" },
 ];
 
+const images = [
+	{ src: "/1.png", alt: "Learnwish Facebook" },
+	{ src: "/2.png", alt: "Learnwish instragram" },
+	{ src: "/3.png", alt: "Learnwish X" },
+	{ src: "/4.png", alt: "Learnwish Youtube" },
+];
+
 const Footer = () => {
 	return (
 		<footer>
 			<div className={styles.container}>
-				<div>©2024 Learnwish. All rights reserved.</div>
+				<div>
+					<p>©2024 Learnwish. All rights reserved.</p>
+				</div>
+				{/* <div className={styles.links}>
+					{links.map(({ href, label }) => (
+						<Link key={`${href}${label}`} href={href} rel="noopener noreferrer">
+							{label}
+						</Link>
+					))}
+				</div> */}
 				<div className={styles.social}>
-					<Image
-						src="/1.png"
-						width={15}
-						height={15}
-						className={styles.icon}
-						alt="Learnwish Facebook"
-					/>
-					<Image
-						src="/2.png"
-						width={15}
-						height={15}
-						className={styles.icon}
-						alt="Learnwish instragram"
-					/>
-					<Image
-						src="/3.png"
-						width={15}
-						height={15}
-						className={styles.icon}
-						alt="Learnwish X"
-					/>
-					<Image
-						src="/4.png"
-						width={15}
-						height={15}
-						className={styles.icon}
-						alt="Learnwish Youtube"
-					/>
+					{images.map(({ src, alt }) => (
+						<Image
+							key={src}
+							src={src}
+							width={15}
+							height={15}
+							className={styles.icon}
+							alt={alt}
+						/>
+					))}
 				</div>
 			</div>
 		</footer>

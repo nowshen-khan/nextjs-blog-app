@@ -9,10 +9,10 @@ const About = () => {
 			<div className={styles.imgContainer}>
 				<Image src="/Logo.png" fill={true} alt="" className={styles.img} />
 				<div className={styles.imgText}>
-					<h1 className={styles.imgTitle}>Digital Storytellers</h1>
-					<h2 className={styles.imgDesc}>
+					<h1 className={styles.imgTitle}>About</h1>
+					{/* <h2 className={styles.imgDesc}>
 						Handcrafting award winning digital experiences
-					</h2>
+					</h2> */}
 				</div>
 			</div>
 			<div className={styles.textContainer}>
